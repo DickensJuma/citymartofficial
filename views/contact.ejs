@@ -7,7 +7,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-7 col-md-9">
-						<div id="colorlib-logo"><a href="index.html"><img src="images/logo.png"  alt="citymart"></a></div>
+						<div id="colorlib-logo"><a href="/"><img src="images/logo.png"  alt="citymart"></a></div>
 					</div>
 					<div class="col-sm-5 col-md-3">
 					<form action="#" class="search-wrap">
@@ -18,30 +18,30 @@
 					</form>
 				 </div>
 			 </div>
-				<div class="row">
-					<div class="col-sm-12 text-left menu-1">
-						<ul>
-							<li class="active"><a href="/">Home</a></li>
-							<li class="has-dropdown">
-								<a href="./products.ejs">Products</a>
-								<ul class="dropdown">
-									<li><a href="product-detail.html">Product Detail</a></li>
-									<li><a href="cart.html">Chandaria Lights </a></li>
-									<li><a href="checkout.html">Piping Materials</a></li>
-									<li><a href="order-complete.html">Wiring Cables</a></li>
-									<li><a href="add-to-wishlist.html">Switches & Security Fittings</a></li>
-									<li><a href="order-complete.html">All Electrical Appliances</a></li>
-								</ul>
-							</li>
-							<li><a href="women.html">Electronics</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="./contact">Contact</a></li>
-							<li class="cart"><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+             <div class="row">
+                <div class="col-sm-12 text-left menu-1">
+                    <ul>
+                        <li class="active"><a href="/">Home</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Products</a>
+                            <ul class="dropdown">
+                                <li><a href="/products">Product Detail</a></li>
+                                <li><a href="/products">Chandaria Lights </a></li>
+                                <li><a href="/products">Piping Materials</a></li>
+                                <li><a href="/products">Wiring Cables</a></li>
+                                <li><a href="/products">Switches & Security Fittings</a></li>
+                                <li><a href="/products">All Electrical Appliances</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/products">Electronics</a></li>
+                        <li><a href="/products">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li class="cart"><a href="/products"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
         <div class="sale">
             <div class="container">
                 <div class="row">
@@ -70,7 +70,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p class="bread"><span><a href="index.html">Home</a></span> / <span>Contact</span></p>
+                    <p class="bread"><span><a href="/">Home</a></span> / <span>Contact</span></p>
                 </div>
             </div>
         </div>
@@ -103,32 +103,32 @@
                 <div class="col-md-6">
                     <div class="contact-wrap">
                         <h3>Send Us A Quote</h3>
-                        <form action="#" class="contact-form">
+                        <form action="/contact" method="POST"  class="contact-form">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="fname">Full Name</label>
-                                        <input type="text" id="fname" class="form-control" placeholder="Your firstname">
+                                        <input type="text" name="fname" id="fname" class="form-control" placeholder="Your firstname">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="phone">Last Name</label>
-                                        <input type="text" id="lname" class="form-control" placeholder="Your lastname">
+                                        <input type="text" name="lname" id="lname" class="form-control" placeholder="Your lastname">
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="text" id="email" class="form-control" placeholder="Your email address">
+                                        <input type="text" name="email" id="email" class="form-control" placeholder="Your email address">
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="subject">Phone Number</label>
-                                        <input type="text" id="subject" class="form-control" placeholder="Your phone number">
+                                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Your phone number">
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -154,7 +154,6 @@
             </div>
         </div>
     </div>
-s
 
 </div>
 
