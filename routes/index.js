@@ -43,11 +43,12 @@ res.render('home'));
                 // The actual output format of the message, that it is going to be sent by email
                 const output = `<h3>Contact Details</h3>
                                 <ul> 
-                                    <li>Name: ${req.body.name}</li>
+                                    <li>Name: ${req.body.fname},${req.body.lname}</li>
                                     <li>Email: ${req.body.email}</li>
                                     <li>Phone No.: ${req.body.phone}</li>
                                 </ul>
-                                <h3>Message</h3> `;
+                                <h3>Message</h3> 
+                                <p>${req.body.message}</p>`;
     
             // NODEMAILER
             // create reusable transporter object using the default SMTP transport
@@ -58,8 +59,8 @@ res.render('home'));
                 port: 587,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: 'kennedyojwang57@gmail.com', // generated ethereal user
-                    pass: '0704868023dj' // generated ethereal password
+                    user: 'citymartelectricals@gmail.com', // generated ethereal user
+                    pass: 'kisumu2019' // generated ethereal password
                 },
                 tls: {
                 ciphers:'SSLv3'
@@ -68,8 +69,8 @@ res.render('home'));
     
             // setup email data with unicode symbols
             let mailOptions = {
-                from: '"Kadianga Electrical Ltd" orders@kadianga.co.ke', // sender address
-                to: `kennedyojwang57@gmail.com`, // list of receivers
+                from: '"Citymart Electrical Ltd" orders@citymart.co.ke', // sender address
+                to: `citymartelectricals@gmail.com`, // list of receivers
                 subject: 'Product Request', // Subject line
                 html:output // html body
             };
@@ -106,8 +107,8 @@ res.render('home'));
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'kennedyojwang57@gmail.com', // generated ethereal user
-            pass: '0704868023dj' // generated ethereal password
+            user: 'citymartelectricals@gmail.com', // generated ethereal user
+            pass: 'kisumu2019' // generated ethereal password
         },
         tls: {
         ciphers:'SSLv3'
@@ -117,7 +118,7 @@ res.render('home'));
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"Kadianga Electrical Ltd" orders@kadianga.co.ke', // sender address
-        to: `kennedyojwang57@gmail.com,${req.body.email}`, // list of receivers
+        to: `citymartelectricals@gmail.com,${req.body.email}`, // list of receivers
         subject: 'Subscription Request',
         html:output // html body
     };

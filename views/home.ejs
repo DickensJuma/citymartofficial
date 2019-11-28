@@ -1,8 +1,74 @@
-<% include ./partials/navbar%>
+
 <%include ./partials/messages%>
+<div id="page">
+	<nav class="colorlib-nav" role="navigation">
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7 col-md-9">
+						<div id="colorlib-logo"><a href="/"><img src="images/logo.png"  alt="citymart"></a></div>
+					</div>
+					<div class="col-sm-5 col-md-3">
+					<form action="#" class="search-wrap">
+					   <div class="form-group">
+						  <input type="search" class="form-control search" placeholder="Search">
+						  <button class="btn btn-primary submit-search text-center" type="submit"><i class="icon-search"></i></button>
+					   </div>
+					</form>
+				 </div>
+			 </div>
+				<div class="row">
+					<div class="col-sm-12 text-left menu-1">
+						<ul>
+							<li class="active"><a href="/">Home</a></li>
+							<li class="has-dropdown">
+								<a href="/products">Products</a>
+								<ul class="dropdown">
+									<li><a href="/products">Product Detail</a></li>
+									<li><a href="/products">Chandaria Lights </a></li>
+									<li><a href="/products">Piping Materials</a></li>
+									<li><a href="/products">Wiring Cables</a></li>
+									<li><a href="/products">Switches & Security Fittings</a></li>
+									<li><a href="/products">All Electrical Appliances</a></li>
+								</ul>
+							</li>
+							<li><a href="/products">Electronics</a></li>
+							<li><a href="/products">About</a></li>
+							<li><a href="/contact">Contact</a></li>
+							<li class="cart"><a href="/products"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sale">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 offset-sm-2 text-center">
+						<div class="row">
+							<div class="owl-carousel2">
+								<div class="item">
+									<div class="col">
+										<h3><a href="#">5% off (Almost) Everything! Use Code: December Sale</a></h3>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col">
+										<h3><a href="/products">Our biggest sale yet 50% off all electricals sales</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
 
 		<aside id="colorlib-hero">
 			<div class="flexslider">
+
 				<ul class="slides">
 			   	<li style="background-image: url(images/img_bg_1.jpg);">
 			   		<div class="overlay"></div>
@@ -15,7 +81,7 @@
 					   					<h2 class="head-2">Electronics</h2>
 					   					<h2 class="head-3">Electricals</h2>
 					   					<p class="category"><span>New trending Electricals</span></p>
-					   					<p><a href="#" class="btn btn-primary">Products</a></p>
+					   					<p><a href="/products" class="btn btn-primary">Products</a></p>
 				   					</div>
 				   				</div>
 				   			</div>
@@ -33,13 +99,31 @@
 					   					<h2 class="head-2">Sale</h2>
 					   					<h2 class="head-3"><strong class="font-weight-bold">25%</strong> Off</h2>
 					   					<p class="category"><span>Big sale Electronics</span></p>
-					   					<p><a href="#" class="btn btn-primary">Products</a></p>
+					   					<p><a href="/products" class="btn btn-primary">Products</a></p>
 				   					</div>
 				   				</div>
 				   			</div>
 				   		</div>
 			   		</div>
-			   	</li>
+				   </li>
+				   <li style="background-image: url(images/big.jpg);">
+					<div class="overlay"></div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 offset-sm-3 text-center slider-text">
+								<div class="slider-text-inner">
+									<div class="desc">
+										<h1 class="head-1">Huge</h1>
+										<h2 class="head-2">Sale</h2>
+										<h2 class="head-3"><strong class="font-weight-bold">25%</strong> Off</h2>
+										<p class="category"><span>Big sale Electronics</span></p>
+										<p><a href="#" class="btn btn-primary">Products</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
 			   	<li style="background-image: url(images/img_bg_3.jpg);">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
@@ -108,9 +192,9 @@
 					</div>
 					<div class="col-sm-6 text-center">
 						<div class="featured">
-							<a href="#" class="featured-img" style="background-image: url(images/men.jpg);"></a>
+							<a href="/products" class="featured-img" style="background-image: url(images/product.jpg);"></a>
 							<div class="desc">
-								<h2><a href="#">Chandaria lights</a></h2>
+								<h2><a href="/products">Chandaria Lights</a></h2>
 							</div>
 						</div>
 					</div>
@@ -119,7 +203,7 @@
 						<div class="featured">
 							<a href="#" class="featured-img" style="background-image: url(images/women.jpg);"></a>
 							<div class="desc">
-								<h2><a href="#">Solar Light</a></h2>
+								<h2><a href="#">FloodLight Solar</a></h2>
 							</div>
 						</div>
 					</div>
@@ -143,7 +227,7 @@
 								<img src="images/item-1.jpg" class="img-fluid" alt="citymart">
 							</a>
 							<div class="desc">
-								<h2><a href="#">Lamps</a></h2>
+								<h2><a href="#">Wall Lights</a></h2>
 								
 							</div>
 						</div>
@@ -165,7 +249,7 @@
 								<img src="images/item-3.jpg" class="img-fluid" alt="citymart">
 							</a>
 							<div class="desc">
-								<h2><a href="#">Black coated wire</a></h2>
+								<h2><a href="#">Armored cable</a></h2>
 								
 							</div>
 						</div>
@@ -176,7 +260,7 @@
 								<img src="images/item-4.jpg" class="img-fluid" alt="citymart">
 							</a>
 							<div class="desc">
-								<h2><a href="#">Connection wire</a></h2>
+								<h2><a href="#">Single wire</a></h2>
 								
 							</div>
 						</div>
@@ -188,7 +272,7 @@
 								<img src="images/item-5.jpg" class="img-fluid" alt="citymart">
 							</a>
 							<div class="desc">
-								<h2><a href="#">Reading lamp</a></h2>
+								<h2><a href="#">Hand Dryer</a></h2>
 								
 							</div>
 						</div>
@@ -199,7 +283,7 @@
 								<img src="images/item-6.jpg" class="img-fluid" alt="citymart">
 							</a>
 							<div class="desc">
-								<h2><a href="#">solar lamp</a></h2>
+								<h2><a href="#">Solar lamp</a></h2>
 								
 							</div>
 						</div>
@@ -244,7 +328,7 @@
 								<img src="images/item-10.jpg" class="img-fluid" alt="citymart">
 							</a>
 							<div class="desc">
-								<h2><a href="#">Led light</a></h2>
+								<h2><a href="#">Ceiling lamps</a></h2>
 								
 							</div>
 						</div>
@@ -266,7 +350,7 @@
 								<img src="images/item-12.jpg" class="img-fluid" alt="citymart">
 							</a>
 							<div class="desc">
-								<h2><a href="#">Decoration light</a></h2>
+								<h2><a href="#">Ceiling Lamps</a></h2>
 								
 							</div>
 						</div>
@@ -278,7 +362,7 @@
 								<img src="images/item-13.jpg" class="img-fluid" alt="citymart">
 							</a>
 							<div class="desc">
-								<h2><a href="#">Tape</a></h2>
+								<h2><a href="#">Single Cable</a></h2>
 								
 							</div>
 						</div>
@@ -289,7 +373,7 @@
 								<img src="images/item-14.jpg" class="img-fluid" alt="citymart">
 							</a>
 							<div class="desc">
-								<h2><a href="#">Meter box</a></h2>
+								<h2><a href="#">Consumer Unit</a></h2>
 								
 							</div>
 						</div>
@@ -311,7 +395,7 @@
 								<img src="images/item-16.jpg" class="img-fluid" alt="citymart">
 							</a>
 							<div class="desc">
-								<h2><a href="#">Round Light</a></h2>
+								<h2><a href="#">Ceiling Lamps</a></h2>
 								
 							</div>
 						</div>
@@ -335,25 +419,34 @@
 				</div>
 				<div class="row">
 					<div class="col partner-col text-center">
-						<img src="images/brand-1.png" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="images/brand-1.png" class="img-fluid" alt="citymart">
 					</div>
 					<div class="col partner-col text-center">
-						<img src="images/brand2.png" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="images/brand2.png" class="img-fluid" alt="citymart">
 					</div>
                      <div class="col partner-col text-center">
-						<img src="images/brand7.png" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="images/brand7.png" class="img-fluid" alt="citymart">
 					</div>
 					<div class="col partner-col text-center">
-						<img src="images/brand3.png" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="images/brand3.png" class="img-fluid" alt="citymart">
 					</div>
 					<div class="col partner-col text-center">
-						<img src="images/brand4.png" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="images/brand4.png" class="img-fluid" alt="citymart">
 					</div>
 					<div class="col partner-col text-center">
-						<img src="images/brand5.png" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="images/eacables.png" class="img-fluid" alt="citymart">
+					  </div>
+					  <div class="col partner-col text-center">
+						<img src="images/coastcable.png" class="img-fluid" alt="citymart">
+					  </div>
+					  <div class="col partner-col text-center">
+						<img src="images/asl.jpg" class="img-fluid" alt="citymart">
+					  </div>
+					<div class="col partner-col text-center">
+						<img src="images/brand5.png" class="img-fluid" alt="citymart">
 					</div>
                     <div class="col partner-col text-center">
-						<img src="images/brand6.png" class="img-fluid" alt="Free html4 bootstrap 4 template">
+						<img src="images/brand6.png" class="img-fluid" alt="citymart">
 					</div>
 				</div>
 			</div>
@@ -365,16 +458,16 @@
 						<h3>Contact Information</h3>
 						<div class="row contact-info-wrap">
 							<div class="col-md-3">
-								<p><span><i class="icon-location"></i></span> 198 West 21th Street, <br> Suite 721 New York NY 10016</p>
+								<p><span><i class="icon-location"></i></span> Kondele Street,  <br> Along Kakamega Road, Kisumu</p>
 							</div>
 							<div class="col-md-3">
-								<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+								<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 254 706 619 991</a></p>
 							</div>
 							<div class="col-md-3">
-								<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+								<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@yoursite.com">info@citymart.com</a></p>
 							</div>
 							<div class="col-md-3">
-								<p><span><i class="icon-globe"></i></span> <a href="#">yoursite.com</a></p>
+								<p><span><i class="icon-globe"></i></span> <a href="#">citymart.com</a></p>
 							</div>
 						</div>
 					</div>
@@ -383,32 +476,32 @@
 					<div class="col-md-6">
 						<div class="contact-wrap">
 							<h3>Send Us A Quote</h3>
-							<form action="#" class="contact-form">
+							<form action="/contact" method="POST"  class="contact-form">
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
 											<label for="fname">Full Name</label>
-											<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+											<input type="text" name="fname" id="fname" class="form-control" placeholder="Your firstname">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
 											<label for="phone">Last Name</label>
-											<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+											<input type="text" name="lname" id="lname" class="form-control" placeholder="Your lastname">
 										</div>
 									</div>
 									<div class="w-100"></div>
 									<div class="col-sm-12">
 										<div class="form-group">
 											<label for="email">Email</label>
-											<input type="text" id="email" class="form-control" placeholder="Your email address">
+											<input type="text" name="email" id="email" class="form-control" placeholder="Your email address">
 										</div>
 									</div>
 									<div class="w-100"></div>
 									<div class="col-sm-12">
 										<div class="form-group">
 											<label for="subject">Phone Number</label>
-											<input type="text" id="subject" class="form-control" placeholder="Your phone number">
+											<input type="text" id="phone" class="form-control" placeholder="Your phone number">
 										</div>
 									</div>
 									<div class="w-100"></div>
@@ -441,8 +534,73 @@ s
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="ion-ios-arrow-up"></i></a>
 	</div>
-<%include ./products%>
-<hr>
-<%include ./partials/maincontact%>
-<%include ./partials/subscribe%>
-<%include ./partials/footer%>
+
+	<footer id="colorlib-footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col footer-col colorlib-widget">
+					<h4 style="color:#28a745;">About Citymart</h4>
+					<p>The best electrical shop in Kisumu. Suppling the best Quality electical products to the client County </p>
+					<p>
+						<ul class="colorlib-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+				<div class="col footer-col colorlib-widget">
+					<h4 style="color:#28a745;">Customer Care</h4>
+					<p>
+						<ul class="colorlib-footer-links">
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Gift Voucher</a></li>
+							<li><a href="#">Special</a></li>
+							<li><a href="#">Customer Services</a></li>
+							
+						</ul>
+					</p>
+				</div>
+				<div class="col footer-col colorlib-widget">
+					<h4 style="color:#28a745;">Information</h4>
+					<p>
+						<ul class="colorlib-footer-links">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Delivery Information</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Support</a></li>
+							
+						</ul>
+					</p>
+				</div>
+
+				
+				<div class="col footer-col">
+					<h4 style="color:#28a745;">Contact Information</h4>
+					<ul class="colorlib-footer-links">
+						<li>Kondele Kisumu  <br> Along kakamenga Road</li>
+						<li><a href="tel://1234567920">+ 254 706 619 991</a></li>
+						<li><a href="mailto:info@yoursite.com">info@citymart.co.ke</a></li>
+						<li><a href="#">citymart.co.ke</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="copy">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<p>
+						
+Citymart &copy;<script>document.write(new Date().getFullYear());</script> 
+
+						
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="ion-ios-arrow-up"></i></a>
+</div>
