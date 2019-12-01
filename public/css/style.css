@@ -8338,11 +8338,13 @@ h1, h2, h3, h4, h5,
 
 .contact-wrap {
   padding: 2em;
+  display: inline-block;
+  width: 100%;
   background: #88c8bc;
   height: 100%; }
 
 .contact-form label {
-  font-weight: 400; }
+  font-weight: 600; }
 
 .form-control {
   -webkit-box-shadow: none;
@@ -8351,7 +8353,7 @@ h1, h2, h3, h4, h5,
   -o-box-shadow: none;
   box-shadow: none;
   border: none !important;
-  font-size: 13px !important;
+  font-size: 18px !important;
   font-weight: 300;
   background: #fff !important;
   border: 1px solid rgba(0, 0, 0, 0.05) !important;
