@@ -1,7 +1,7 @@
 {
   "name": "citymart",
   "version": "1.0.0",
-  "description": "",
+  "description": "Electrical supply store, Electrical shop in kisumu",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
